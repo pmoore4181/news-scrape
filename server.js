@@ -44,7 +44,7 @@ var db = process.env.MONGODB_URI || 'mongodb://localhost/farkHeadlines';
 // 	}
 // });
 
-mongoose.connect(mongodb:/\/heroku_h220ks1p:cfv3mi3fcbtmc0qkmpm0m7709k@ds123124.mlab.com:23124/heroku_h220ks1p)
+mongoose.connect('mongodb://heroku_h220ks1p:cfv3mi3fcbtmc0qkmpm0m7709k@ds123124.mlab.com:23124/heroku_h220ks1p')
 
 // listen to port
 app.listen(port, function(){
