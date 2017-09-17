@@ -36,13 +36,15 @@ app.use(router);
 // if deployed, use deployed database, else use local database
 var db = process.env.MONGODB_URI || 'mongodb://localhost/farkHeadlines';
 
-mongoose.connect(db, function(error){
-	if(error){
-		console.log(error);
-	} else {
-		console.log('connected to mongoose, bruh');
-	}
-});
+// mongoose.connect(db, function(error){
+// 	if(error){
+// 		console.log(error);
+// 	} else {
+// 		console.log('connected to mongoose, bruh');
+// 	}
+// });
+
+mongoose.connect(mongodb:/\/heroku_h220ks1p:cfv3mi3fcbtmc0qkmpm0m7709k@ds123124.mlab.com:23124/heroku_h220ks1p)
 
 // listen to port
 app.listen(port, function(){
