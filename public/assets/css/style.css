@@ -7,17 +7,32 @@ html {
 	line-height: 1.5em;
 }
 
+body {
+	background: url(../images/bodyBG.jpg);
+}
+
 .container {
 	display: grid;
 	width: 90%;
+	margin: auto auto;
 }
+
+/* ========================= HEADER ========================= */
 
 header {
 	background: #555;
 	color: #fff;
+	height: 80px;
+}
+
+.title {
+	font-size: 1.5em;
+	margin-top: 5px;
+	margin-left: 10px;
 }
 
 header a {
+	font-size: 1.2em;
 	color: #dfdfff;
 	text-decoration: none;
 }
@@ -25,3 +40,39 @@ header a {
 header a:hover {
 	text-decoration: underline;
 }
+
+.headerText{
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.theScraper {
+	float: right;
+	margin-right: 40px;
+	padding: 15px 15px;
+	border-radius: 5px;
+	margin-top:-60px;
+}
+
+.belowHeader {
+	width: 95%;
+	background: #ccc;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#scrapeFark {
+	margin-left: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
