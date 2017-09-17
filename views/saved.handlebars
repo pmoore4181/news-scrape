@@ -1,14 +1,22 @@
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Saved Articles</a>
+  <header>
+    <div class='title'>
+      <strong id='farkScrape'>Fark Scrape</strong>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="/">Home</a></li>
-      <li class="active"><a href="/saved">Saved Articles</a></li>
-    </ul>
+    <div class='linksButton'>
+      <div class='headerText'>
+        <a href='/'>Home</a>
+
+        <a href='/saved' class='theSave active'>Saved Articles</a>
+      </div>
+
+      <button class='theScraper'>Scrape Fark</button>
+    </div>
+  </header>
+
+  <div class='belowHeader'>
+    <p><span id='scrapeFark'>Scrape Fark.com </span>using Mongo and Mongoose</p>
+
   </div>
-</nav>
 <div class="jumbotron text-center">
   <div class="overlay">
   </div>

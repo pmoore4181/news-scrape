@@ -10,28 +10,10 @@ $(document).ready(function() {
   // Once the page is ready, run the initPage function to kick things off
   initPage();
 
-  // function initPage() {
-  //   console.log('init page');
-  //   // Empty the article container, run an AJAX request for any unsaved headlines
-  //   // resultsContainer.empty();
-  //   $.get("/api/headlines").then(function(data) {
-  //     // If we have headlines, render them to the page
-  //     if (data && data.length) {
-  //       console.log(data);
-  //       renderArticles(data);
-  //     }
-  //     else {
-  //     //   // Otherwise render a message explaing we have no articles
-  //       renderEmpty();
-  //     }
-  //   });
-  // }
-
-
   function initPage() {
     // Empty the article container, run an AJAX request for any unsaved headlines
     resultsContainer.empty();
-    $.get("/api/headlines").then(function(data) {
+    $.get("/api/headlines?saved=false").then(function(data) {
       // If we have headlines, render them to the page
       console.log(data);
       if (data && data.length) {
@@ -64,12 +46,12 @@ $(document).ready(function() {
     // article panel
     var panel = $(
       [
-        "<div class='panel panel-default'>",
-        "<a class='article-link' target='_blank' href='" + article.link + "'>",
-        article.headline,
-        "</a>",
+        "<div class='panel panel-default resultPanel'>",
         "<a class='btn btn-success save theSave'>",
         "Save Article",
+        "</a>",
+        "<a class='article-link' target='_blank' href='" + article.link + "'>",
+        article.headline,
         "</a>",
         "</div>"
       ].join("")

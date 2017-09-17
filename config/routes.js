@@ -76,8 +76,8 @@ module.exports = function(router) {
     });
 
     // post notes to articles
-    router.post('api/notes', function(req, res) {
-        notesController.save(req.body, function(err, data) {
+    router.post('/api/notes', function(req, res) {
+        notesController.save(req.body, function(data, err) {
             res.json(data);
         });
     });
